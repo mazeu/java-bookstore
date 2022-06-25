@@ -1,8 +1,6 @@
 package application;
 
 
-import model.entities.Book;
-
 public class Program {
 
 public static void main(String[] args){
@@ -27,8 +25,6 @@ public static void main(String[] args){
         System.out.println("Seu estoque esta bom!");
     }
 
-    Book book = new Book();
-    book.name = "Java 8";
 
 }
 
