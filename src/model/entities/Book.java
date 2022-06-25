@@ -4,12 +4,15 @@ public class Book {
 
     private String name;
     private String description;
-    private double value;
+    protected double value;
     private String isbn;
     private Author author;
+    private boolean digitalBook;
 
     public Book(Author author){
         this.author = author;
+        this.isbn = "000-00-00000-00-0";
+        this.digitalBook = false;
     }
 
     public void showDetails(){
