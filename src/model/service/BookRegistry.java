@@ -2,6 +2,7 @@ package model.service;
 
 import model.entities.Author;
 import model.entities.Book;
+import model.entities.PhysicalBook;
 
 public class BookRegistry {
     public static void main(String[] args) {
@@ -11,7 +12,7 @@ public class BookRegistry {
         author.setEmail("marciomazeu@hotmail.com");
         author.setCpf("000.000.000-11");
 
-        Book book = new Book(author);
+        Book book = new PhysicalBook(author);
         book.setName("Java 8 Pratico");
         book.setDescription("Novos recursos da linguagem");
         book.setValue(59.9);

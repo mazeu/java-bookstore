@@ -1,6 +1,6 @@
 package model.entities;
 
-public class Book {
+abstract public class Book {
 
     private String name;
     private String description;
