@@ -22,6 +22,8 @@ public class Ebook extends Book{
         }
         double discount = this.value * percentage;
         this.setValue(this.getValue() - discount);
+
+        System.out.println("aplicado desconto no Ebook");
         return true;
     }
 }

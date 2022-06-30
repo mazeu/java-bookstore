@@ -34,6 +34,9 @@ public class Book {
             return false;
         }
         this.value -= this.value * percentage;
+
+        System.out.println("aplicado desconto no Ebook");
+
         return true;
     }
 
