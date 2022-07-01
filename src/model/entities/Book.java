@@ -1,6 +1,6 @@
 package model.entities;
 
-abstract public class Book {
+abstract public class Book implements Product{
 
     private String name;
     private String description;
@@ -29,16 +29,6 @@ abstract public class Book {
         System.out.println("--");
     }
 
-    public boolean applyDiscount(double percentage){
-        if(percentage >0.3){
-            return false;
-        }
-        this.value -= this.value * percentage;
-
-        System.out.println("aplicado desconto no Ebook");
-
-        return true;
-    }
 
     public boolean haveAuthor(){
         return this.author != null;

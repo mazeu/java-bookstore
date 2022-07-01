@@ -18,7 +18,7 @@ public class BookRegistry {
         book.setValue(59.9);
         book.setIsbn("978-85-66250-46-6");
 
-      book.showDetails();
+        book.showDetails();
 
 
 

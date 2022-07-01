@@ -17,11 +17,16 @@ public class SellRegistry {
         Ebook ebook = new Ebook(author);
         ebook.setName("Test-Driven Development");
         ebook.setValue(29.9);
-
+        
+        if(physical.applyDiscount10()){
+            System.out.println("Valor agora é: " + physical.getValue());
+        }
         Cart cart = new Cart();
 
         cart.addItem(physical);
         cart.addItem(ebook);
+
+
 
         System.out.println("Total " + cart.getTotal());
     }

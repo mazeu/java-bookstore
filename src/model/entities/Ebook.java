@@ -1,6 +1,6 @@
 package model.entities;
 
-public class Ebook extends Book{
+public class Ebook extends Book implements Promotional{
 
     private String waterMark;
 
