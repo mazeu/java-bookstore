@@ -1,9 +1,9 @@
-package model.service;
+package br.com.mazeu.bookstore.model.service;
 
-import model.entities.Author;
-import model.entities.Cart;
-import model.entities.Ebook;
-import model.entities.PhysicalBook;
+import br.com.mazeu.bookstore.model.entities.Author;
+import br.com.mazeu.bookstore.model.entities.Cart;
+import br.com.mazeu.bookstore.model.entities.Ebook;
+import br.com.mazeu.bookstore.model.entities.PhysicalBook;
 
 public class SellRegistry {
     public static void main(String[] args){
@@ -17,7 +17,7 @@ public class SellRegistry {
         Ebook ebook = new Ebook(author);
         ebook.setName("Test-Driven Development");
         ebook.setValue(29.9);
-        
+
         if(physical.applyDiscount10()){
             System.out.println("Valor agora é: " + physical.getValue());
         }

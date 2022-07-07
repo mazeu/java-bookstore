@@ -1,8 +1,8 @@
-package model.service;
+package br.com.mazeu.bookstore.model.service;
 
-import model.entities.Author;
-import model.entities.Book;
-import model.entities.PhysicalBook;
+import br.com.mazeu.bookstore.model.entities.Author;
+import br.com.mazeu.bookstore.model.entities.Book;
+import br.com.mazeu.bookstore.model.entities.PhysicalBook;
 
 public class BookRegistry {
     public static void main(String[] args) {

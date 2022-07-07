@@ -1,4 +1,4 @@
-package model.entities;
+package br.com.mazeu.bookstore.model.entities;
 
 public class Ebook extends Book implements Promotional{
 

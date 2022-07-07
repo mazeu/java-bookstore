@@ -1,4 +1,4 @@
-package model.entities;
+package br.com.mazeu.bookstore.model.entities;
 
 public class Magazine implements Product, Promotional {
     private String name;

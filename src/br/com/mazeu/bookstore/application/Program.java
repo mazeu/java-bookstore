@@ -1,4 +1,4 @@
-package application;
+package br.com.mazeu.bookstore.application;
 
 
 public class Program {
