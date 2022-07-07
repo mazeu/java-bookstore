@@ -10,6 +10,9 @@ abstract public class Book implements Product{
     private boolean digitalBook;
 
     public Book(Author author){
+        if(author == null){
+            throw new RuntimeException("O Autor do Livro não pode ser nulo!");
+        }
         this.author = author;
         this.isbn = "000-00-00000-00-0";
         this.digitalBook = false;
