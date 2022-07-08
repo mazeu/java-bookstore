@@ -1,9 +1,10 @@
 package br.com.mazeu.bookstore.model.service;
 
-import br.com.mazeu.bookstore.model.entities.Author;
-import br.com.mazeu.bookstore.model.entities.Cart;
-import br.com.mazeu.bookstore.model.entities.Ebook;
-import br.com.mazeu.bookstore.model.entities.PhysicalBook;
+import br.com.mazeu.bookstore.model.entities.*;
+
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
 
 public class SellRegistry {
     public static void main(String[] args){
@@ -18,6 +19,8 @@ public class SellRegistry {
         ebook.setName("Test-Driven Development");
         ebook.setValue(29.9);
 
+
+
         if(physical.applyDiscount10()){
             System.out.println("Valor agora é: " + physical.getValue());
         }
@@ -26,8 +29,14 @@ public class SellRegistry {
         cart.addItem(physical);
         cart.addItem(ebook);
 
-
-
         System.out.println("Total " + cart.getTotal());
+
+        List<Product> products = cart.getProducts();
+
+        Collections.sort(products);
+
+        for(Product product : products){
+            System.out.println(product.getValue());
+        }
     }
 }

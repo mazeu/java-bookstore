@@ -1,5 +1,7 @@
 package br.com.mazeu.bookstore.model.entities;
 
+import br.com.mazeu.bookstore.exception.NullAuthorException;
+
 abstract public class Book implements Product{
 
     private String name;
@@ -11,7 +13,7 @@ abstract public class Book implements Product{
 
     public Book(Author author){
         if(author == null){
-            throw new RuntimeException("O Autor do Livro não pode ser nulo!");
+            throw new NullAuthorException("O Autor do Livro não pode ser nulo!");
         }
         this.author = author;
         this.isbn = "000-00-00000-00-0";
@@ -75,5 +77,10 @@ abstract public class Book implements Product{
 
     public void setAuthor(Author author) {
         this.author = author;
+    }
+
+    @Override
+    public int compareTo(Product other){
+        return (int) (this.getValue() - other.getValue());
     }
 }

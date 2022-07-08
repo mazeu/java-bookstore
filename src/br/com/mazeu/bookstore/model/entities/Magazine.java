@@ -48,4 +48,15 @@ public class Magazine implements Product, Promotional {
     public void setPublisher(Publisher publisher) {
         this.publisher = publisher;
     }
+
+    @Override
+    public int compareTo(Product other){
+        if(this.getValue() < other.getValue()){
+            return -1;
+        }
+        if(this.getValue() > other.getValue()){
+            return 1;
+        }
+        return 0;
+    }
 }
