@@ -38,5 +38,14 @@ public class SellRegistry {
         for(Product product : products){
             System.out.println(product.getValue());
         }
+
+        CuponsManager manager = new CuponsManager();
+
+        if(manager.trustCupom("CUP1234")){
+            System.out.println("Cupom de desconto valido!");
+
+        }else{
+            System.out.println("Cupom de desconto invalido!");
+        }
     }
 }
